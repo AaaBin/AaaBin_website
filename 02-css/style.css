@@ -12,6 +12,11 @@
   max-width: 732px;
 }
 
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+  font-size: 16px;
+  color: black;
+}
+
 #fullpage {
   background-color: #F9F4ED;
   background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
@@ -32,5 +37,11 @@
 #fullpage .landing_section .container .landing_title .title {
   font-size: 72px;
   font-family: "Roboto";
+  text-shadow: 4px 4px white;
+  font-weight: 800;
+}
+
+#fullpage .profile_section .container .profile_title {
+  font-size: 48px;
 }
 /*# sourceMappingURL=style.css.map */

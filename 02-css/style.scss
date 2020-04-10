@@ -1,7 +1,6 @@
 @import './var';
-
+// 字體
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+TC&family=Open+Sans&family=Oswald&family=Roboto:ital,wght@1,300&display=swap');
-
 * {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -13,12 +12,16 @@
 .container{
     max-width: 732px;
 }
+// 導覽列文字
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip{
+    font-size: 16px;
+    color: black;
+}
 
 
 #fullpage {
     background-color: $bg_color;
     background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
-
     .landing_section {
         .container {
             .landing_img_area {
@@ -36,7 +39,16 @@
                 .title {
                     font-size: $fontsize1;
                     font-family: "Roboto";
+                    text-shadow: 4px 4px white;
+                    font-weight: 800;
                 }
+            }
+        }
+    }
+    .profile_section{
+        .container{
+            .profile_title{
+                font-size: $fontsize2;
             }
         }
     }
