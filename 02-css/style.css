@@ -1,4 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+TC&family=Open+Sans&family=Oswald&family=Roboto:ital,wght@1,300&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+  max-width: 732px;
+}
+
 #fullpage {
   background-color: #F9F4ED;
+  background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
+}
+
+#fullpage .landing_section .container .landing_img_area {
+  min-height: 75vh;
+  position: relative;
+}
+
+#fullpage .landing_section .container .landing_img_area img {
+  position: absolute;
+  -webkit-transition: 2s;
+  transition: 2s;
+  left: 0;
+}
+
+#fullpage .landing_section .container .landing_title .title {
+  font-size: 72px;
+  font-family: "Roboto";
 }
 /*# sourceMappingURL=style.css.map */
