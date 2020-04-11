@@ -6,6 +6,7 @@ new fullpage('#fullpage', {
     navigation: true,
     showActiveTooltip: true,
     navigationTooltips: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE', 'PHOTO'],
+    dragAndMove: true,
 });
 
 //methods
