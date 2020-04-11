@@ -47,146 +47,127 @@ $('#fullpage').on('show.bs.collapse', function () {
 // console.log(data);
 let data = {
     "title": "welcome",
-    "github_href": "https://github.com/AaaBin",
+    "github_href":"https://github.com/AaaBin",
     "section": [
-        "WELCOME",
-        "PROFILE",
-        "SKILL",
-        "PROJECT",
-        "NOTE"
+      "WELCOME",
+      "PROFILE",
+      "SKILL",
+      "PROJECT",
+      "NOTE"
     ],
     "project_content": {
-        "profile": "我是曾炳憲，來自嘉義，於2019年從東海大學社會系畢業。對程式語言的認識從社會研究的量化分析開始，以此為契機接觸了python作為數據分析的工具，畢業後參加了職訓課程接觸到網頁開發，加深了對這個領域的興趣。",
-        "skill": {
-            "前端": [
-                "RWD",
-                "ajax、axios",
-                "bootstrap",
-                "fullcalendar、AOS、swiper等套件"
-            ],
-            "後端": [
-                "MVC",
-                "REST api",
-                "laravel middleware/validation/queue..."
-            ],
-            "自學中": [
-                "Vue",
-                "JS30",
-                "linux"
-            ]
-        },
-        "project": [
-            {
-                "title": "spring mountain",
-                "img": "",
-                "content": "職訓時的團體專題，負責部分為網站後端，使用框架為laravel。",
-                "tags": [
-                    "laravel",
-                    "REST",
-                    "api",
-                    "ORM",
-                    "queue",
-                    "ajax、axios",
-                    "fullcalendar"
-                ]
-            },
-            {
-                "title": "後端實作",
-                "img": "",
-                "content": "學習後端時的練習作品。",
-                "tags": [
-                    "laravel",
-                    "購物車系統",
-                    "金流串接"
-                ]
-            },
-            {
-                "title": "Yuanchia(未完成)",
-                "img": "",
-                "content": "職訓，個人專題，以沒有網站或網站老舊的商家為主題",
-                "tags": [
-                    "bootstrap",
-                    "parallax.js",
-                    "flex"
-                ]
-            },
-            {
-                "title": "Fluent Design",
-                "img": "",
-                "content": "職訓，仿切練習",
-                "tags": [
-                    "RWD",
-                    "SCSS",
-                    "lax.js",
-                    "AOS.js"
-                ]
-            },
-            {
-                "title": "Microsoft",
-                "img": "",
-                "content": "職訓，仿切練習",
-                "tags": [
-                    "flex",
-                    "RWD"
-                ]
-            },
-            {
-                "title": "KJ Engineering",
-                "img": "",
-                "content": "職訓，以mobirise速成畫面，再進行個人化的修改。",
-                "tags": [
-                    "mobirise",
-                    "AOS.js",
-                    "hover.css"
-                ]
-            },
-            {
-                "title": "weather API",
-                "img": "",
-                "content": "職訓，以氣象局開放之API配合JS樣板字串來產生畫面。",
-                "tags": [
-                    "api",
-                    "JS template literals"
-                ]
-            },
-            {
-                "title": "Flex",
-                "img": "",
-                "content": "職訓，以flex屬性作切版練習",
-                "tags": [
-                    "RWD",
-                    "flex"
-                ]
-            }
-        ]
-    },
-    "note_content": [
+      "project": [
         {
-            "title": "Vue全家桶跟著做",
-            "date": "20200406",
-            "tag": "Vue",
-            "href": ""
+          "title": "spring mountain",
+          "img": "",
+          "content": "職訓時的團體專題，負責部分為網站後端，使用框架為laravel。",
+          "tags": [
+            "laravel",
+            "REST",
+            "api",
+            "ORM",
+            "queue",
+            "ajax、axios",
+            "fullcalendar"
+          ]
         },
         {
-            "title": "Laravel:Send Mail With Queue",
-            "date": "20200328",
-            "tag": "Laravel",
-            "href": ""
+          "title": "後端實作",
+          "img": "",
+          "content": "學習後端時的練習作品。",
+          "tags": [
+            "laravel",
+            "購物車系統",
+            "金流串接"
+          ]
         },
         {
-            "title": "JS:what is this",
-            "date": "20200404",
-            "tag": "JavaScript",
-            "href": ""
+          "title": "Yuanchia(未完成)",
+          "img": "",
+          "content": "職訓，個人專題，以沒有網站或網站老舊的商家為主題",
+          "tags": [
+            "bootstrap",
+            "parallax.js",
+            "flex"
+          ]
         },
         {
-            "title": "aws EC2 連線與檔案上傳",
-            "date": "20200406",
-            "tag": "aws",
-            "href": ""
+          "title": "Fluent Design",
+          "img": "",
+          "content": "職訓，仿切練習",
+          "tags": [
+            "RWD",
+            "SCSS",
+            "lax.js",
+            "AOS.js"
+          ]
+        },
+        {
+          "title": "Microsoft",
+          "img": "",
+          "content": "職訓，仿切練習",
+          "tags": [
+            "flex",
+            "RWD"
+          ]
+        },
+        {
+          "title": "KJ Engineering",
+          "img": "",
+          "content": "職訓，以mobirise速成畫面，再進行個人化的修改。",
+          "tags": [
+            "mobirise",
+            "AOS.js",
+            "hover.css"
+          ]
+        },
+        {
+          "title": "weather API",
+          "img": "",
+          "content": "職訓，以氣象局開放之API配合JS樣板字串來產生畫面。",
+          "tags": [
+            "api",
+            "JS template literals"
+          ]
+        },
+        {
+          "title": "Flex",
+          "img": "",
+          "content": "職訓，以flex屬性作切版練習",
+          "tags": [
+            "RWD",
+            "flex"
+          ]
         }
-    ]
-}
+      ]
+    },
+    "note_content":[
+      {
+        "title":"Vue全家桶跟著做",
+        "date":"20200406",
+        "tag":"Vue",
+        "href":""
+      },
+      {
+        "title":"Laravel:Send Mail With Queue",
+        "date":"20200328",
+        "tag":"Laravel",
+        "href":""
+      },
+      {
+        "title":"JS:what is this",
+        "date":"20200404",
+        "tag":"JavaScript",
+        "href":""
+      },
+      {
+        "title":"aws EC2 連線與檔案上傳",
+        "date":"20200406",
+        "tag":"aws",
+        "href":""
+      }
+      ]
+  }
 
 let vm = new Vue({
     el: "#prolect_container",
