@@ -19,14 +19,16 @@ AOS.init();
 // 首頁
 let landing_div = document.querySelector('.landing_img_area');
 window.addEventListener('resize', function () {
+    set_min_height()
+})
+window.addEventListener('load', function () {
+    set_min_height()
+})
+function set_min_height() {
     let landing_img1 = document.querySelector('.landing_img1');
     let landing_img_height = landing_img1.offsetHeight;
-    console.log(landing_img_height);
-    landing_div.setAttribute('style', `min-height:${landing_img_height};`)
-    console.log("55688");
-
-})
-
+    landing_div.setAttribute('style', `min-height:${landing_img_height}px;`)
+}
 
 
 // let landing_img1 = document.querySelector('.landing_img1');

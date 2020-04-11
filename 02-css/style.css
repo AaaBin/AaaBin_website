@@ -111,6 +111,11 @@
   left: -70px;
 }
 
+#fullpage .landing_section .container .landing_title {
+  top: -50px;
+  position: relative;
+}
+
 #fullpage .landing_section .container .landing_title .title {
   font-size: 72px;
   font-family: "Roboto";
@@ -126,9 +131,9 @@
   background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
 }
 
-#fullpage .skill_section .container .skill_content a:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+#fullpage .skill_section .container .skill_content a {
+  color: black;
+  margin: 0 15px;
 }
 
 #fullpage .skill_section .container .skill_content .collapse:focus,

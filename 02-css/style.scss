@@ -103,6 +103,8 @@ p {
             }
 
             .landing_title {
+                top: -50px;
+                position: relative;
                 .title {
                     font-size: $fontsize1;
                     font-family: "Roboto";
@@ -123,10 +125,10 @@ p {
         .container {
 
             .skill_content {
-                a:focus {
-                    box-shadow: none;
+                a{
+                    color: black;
+                    margin: 0 15px;
                 }
-
                 .collapse:focus,
                 .collapse .card.card-body,
                 .collapsing .card.card-body {
