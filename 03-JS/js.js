@@ -6,7 +6,7 @@ new fullpage('#fullpage', {
     showActiveTooltip: true,
     navigationTooltips: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE', 'PHOTO'],
     dragAndMove: true,
-    anchors:['WELCOME', 'PROFILE', 'SKILL','PROJECT','NOTE']
+    anchors: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE']
 });
 
 // AOS初始化
@@ -17,6 +17,18 @@ AOS.init();
 // fullpage_api.setAllowScrolling(false);
 
 // 首頁
+let landing_div = document.querySelector('.landing_img_area');
+window.addEventListener('resize', function () {
+    let landing_img1 = document.querySelector('.landing_img1');
+    let landing_img_height = landing_img1.offsetHeight;
+    console.log(landing_img_height);
+    landing_div.setAttribute('style', `min-height:${landing_img_height};`)
+    console.log("55688");
+
+})
+
+
+
 // let landing_img1 = document.querySelector('.landing_img1');
 // let landing_img2 = document.querySelector('.landing_img2');
 // let landing_img3 = document.querySelector('.landing_img3');

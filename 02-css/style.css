@@ -87,7 +87,6 @@
 }
 
 #fullpage .landing_section .container .landing_img_area {
-  min-height: 75vh;
   position: relative;
 }
 
@@ -96,6 +95,12 @@
   -webkit-transition: 2s;
   transition: 2s;
   left: 0;
+}
+
+@media screen and (max-width: 500px) {
+  #fullpage .landing_section .container .landing_img_area img {
+    width: 100%;
+  }
 }
 
 #fullpage .landing_section .container .landing_img_area .landing_img1 {

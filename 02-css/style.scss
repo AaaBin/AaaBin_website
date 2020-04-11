@@ -83,13 +83,14 @@ p {
         .container {
 
             .landing_img_area {
-                min-height: 75vh;
                 position: relative;
-
                 img {
                     position: absolute;
                     transition: 2s;
                     left: 0;
+                    @media screen and (max-width:500px) {
+                        width: 100%;
+                    }
                 }
 
                 .landing_img1 {
