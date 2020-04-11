@@ -1,6 +1,7 @@
 @import './var';
 // 字體
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+TC&family=Open+Sans&family=Oswald&family=Roboto:ital,wght@1,300&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -9,11 +10,17 @@
     font-family: 'Oswald', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.container{
+
+.container {
     max-width: 732px;
 }
+.title_h2{
+    font-size: $fontsize2;
+}
+
 // 導覽列文字
-#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip{
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active+.fp-tooltip {
     font-size: 16px;
     color: black;
 }
@@ -21,9 +28,13 @@
 
 #fullpage {
     background-color: $bg_color;
-    background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
+
     .landing_section {
+
+        background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
+
         .container {
+
             .landing_img_area {
                 min-height: 75vh;
                 position: relative;
@@ -45,10 +56,54 @@
             }
         }
     }
-    .profile_section{
+
+    .profile_section {
+        background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
+
+        .container {
+        }
+    }
+
+    .skill_section {
+        background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
+
+        .container {
+
+            .skill_content {
+                a:focus {
+                    box-shadow: none;
+                }
+
+                .collapse:focus,
+                .collapse .card.card-body,
+                .collapsing .card.card-body {
+                    background-color: $bg_color;
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    .project_section {
+        background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
         .container{
-            .profile_title{
-                font-size: $fontsize2;
+            .slide{
+                .slide_content{
+                    .img_area{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .fp-prev{
+                left: -30px;
+                border-color: transparent rgba(0, 0, 0, 0.500);
+            }
+            .fp-next{
+                right: -30px;
+                border-color: transparent rgba(0, 0, 0, 0.500);
+
             }
         }
     }

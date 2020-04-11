@@ -12,13 +12,21 @@
   max-width: 732px;
 }
 
-#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+.title_h2 {
+  font-size: 48px;
+}
+
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
   font-size: 16px;
   color: black;
 }
 
 #fullpage {
   background-color: #F9F4ED;
+}
+
+#fullpage .landing_section {
   background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
 }
 
@@ -41,7 +49,41 @@
   font-weight: 800;
 }
 
-#fullpage .profile_section .container .profile_title {
-  font-size: 48px;
+#fullpage .profile_section {
+  background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
+}
+
+#fullpage .skill_section {
+  background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
+}
+
+#fullpage .skill_section .container .skill_content a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#fullpage .skill_section .container .skill_content .collapse:focus,
+#fullpage .skill_section .container .skill_content .collapse .card.card-body,
+#fullpage .skill_section .container .skill_content .collapsing .card.card-body {
+  background-color: #F9F4ED;
+  border: 0;
+}
+
+#fullpage .project_section {
+  background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
+}
+
+#fullpage .project_section .container .slide .slide_content .img_area img {
+  width: 100%;
+}
+
+#fullpage .project_section .container .fp-prev {
+  left: -30px;
+  border-color: transparent rgba(0, 0, 0, 0.5);
+}
+
+#fullpage .project_section .container .fp-next {
+  right: -30px;
+  border-color: transparent rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
