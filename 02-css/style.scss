@@ -107,4 +107,26 @@
             }
         }
     }
+    .note_section{
+        background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
+
+        .container{
+            .note_content{
+                .note_card{
+                    .card_title{
+                        font-size: $fontsize3;
+                    }
+                    .note_date{
+                        font-size: $fontsize4;
+                    }
+                    .note_tag{
+                        font-size: $fontsize4;
+                        padding: 1px 5px;
+                        border-radius: 1px;
+                        background-color: rgba(128, 128, 128, 0.7);
+                    }
+                }
+            }
+        }
+    }
 }

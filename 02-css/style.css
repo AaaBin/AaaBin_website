@@ -86,4 +86,23 @@
   right: -30px;
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
+
+#fullpage .note_section {
+  background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
+}
+
+#fullpage .note_section .container .note_content .note_card .card_title {
+  font-size: 24px;
+}
+
+#fullpage .note_section .container .note_content .note_card .note_date {
+  font-size: 8px;
+}
+
+#fullpage .note_section .container .note_content .note_card .note_tag {
+  font-size: 8px;
+  padding: 1px 5px;
+  border-radius: 1px;
+  background-color: rgba(128, 128, 128, 0.7);
+}
 /*# sourceMappingURL=style.css.map */
