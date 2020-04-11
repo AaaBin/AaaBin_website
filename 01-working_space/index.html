@@ -16,26 +16,42 @@
     <!-- fullpage -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css">
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet">
 
     <link rel="stylesheet"
           href="../02-css/style.css">
 </head>
 
 <body>
+    <div id="header">
+        <div class="container">
+            <ul>
+                <li><a href="#WELCOME">WELCOME</a></li>
+                <li><a href="#PROFILE">PROFILE</a></li>
+                <li><a href="#SKILL">SKILL</a></li>
+                <li><a href="#PROJECT">PROJECT</a></li>
+                <li><a href="#NOTE">NOTE</a></li>
+            </ul>
+        </div>
 
+    </div>
     <div id="fullpage">
-        <div class="section landing_section d-flex">
+        <div class="section landing_section d-flex" data-anchor="WELCOME">
             <div class="container">
                 <div class="landing_img_area">
-                    <img src="../04-img/people_ocean.png"
+                    <img src="../04-img/people_ocean_2.png"
                          alt=""
-                         class="landing_img1">
-                    <img src="../04-img/people_cat.png"
+                         class="landing_img1"
+                         data-aos="fade-right">
+                    <img src="../04-img/people_cat_2.png"
                          alt=""
                          class="landing_img2">
-                    <img src="../04-img/people_bird.png"
+                    <img src="../04-img/people_bird_2.png"
                          alt=""
-                         class="landing_img3">
+                         class="landing_img3"
+                         data-aos="fade-left">
                 </div>
                 <div class="landing_title">
                     <h1 class="title">
@@ -46,7 +62,7 @@
             </div>
 
         </div>
-        <div class="section profile_section">
+        <div class="section profile_section" data-anchor="PROFILE">
             <div class="container">
                 <h2 class="profile_title title_h2">
                     Profile
@@ -57,7 +73,7 @@
             </div>
 
         </div>
-        <div class="section skill_section">
+        <div class="section skill_section" data-anchor="SKILL">
             <div class="container">
                 <h2 class="skill_title title_h2">
                     Skill
@@ -106,7 +122,7 @@
                 </div>
             </div>
         </div>
-        <div class="section project_section">
+        <div class="section project_section" data-anchor="PROJECT">
             <div class="container position-relative">
 
                 <div class="slide">
@@ -117,7 +133,7 @@
 
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>團體練習專題：沐心泉</h4>
                             <a href="https://spring-mountain-test-deploy.herokuapp.com/"
                                class="img_area col-6">
@@ -125,8 +141,8 @@
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">
+                        <div class="slide_content_bottom  d-block justify-content-end">
+                            <p class="col-sm-6">
                                 職訓時的團體專題，負責部分為網站後端，使用框架為laravel。
                                 <br>
                                 #laravel #REST api #ORM #queue #ajax、axios #fullcalendar
@@ -137,7 +153,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>後端練習實作</h4>
                             <a href="https://backend-practice-laravel.herokuapp.com/"
                                class="img_area col-6">
@@ -146,7 +162,7 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#購物車 #金流</p>
+                            <p class="col-sm-6">#購物車 #金流</p>
                         </div>
 
                     </div>
@@ -155,7 +171,7 @@
                 <div class="slide">
 
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>flex切版練習</h4>
                             <a href="#"
                                class="img_area col-6">
@@ -164,7 +180,7 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#flex</p>
+                            <p class="col-sm-6">#flex</p>
                         </div>
 
 
@@ -172,7 +188,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>氣象資料API串接</h4>
                             <a href="#"
                                class="img_area col-6">
@@ -181,7 +197,7 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#api #JS template literals</p>
+                            <p class="col-sm-6">#api #JS template literals</p>
                         </div>
 
 
@@ -189,7 +205,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>仿切：Fluent Design</h4>
                             <a href="#"
                                class="img_area col-6">
@@ -198,13 +214,13 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#flex #scss #AOS #lax.js</p>
+                            <p class="col-sm-6">#flex #scss #AOS #lax.js</p>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>仿切：Microsoft</h4>
                             <a href="#"
                                class="img_area col-6">
@@ -213,14 +229,14 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#flex</p>
+                            <p class="col-sm-6">#flex</p>
                         </div>
 
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>Mobirise速成一頁式網站</h4>
                             <a href="#"
                                class="img_area col-6">
@@ -229,14 +245,14 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#Mobirise #AOS</p>
+                            <p class="col-sm-6">#Mobirise #AOS</p>
                         </div>
 
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
-                        <div class="slide_content_top d-flex align-items-center justify-content-between">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
                             <h4>個人練習專題：圓稼（未完成）</h4>
                             <a href="#"
                                class="img_area col-6">
@@ -245,7 +261,7 @@
                             </a>
                         </div>
                         <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-6">#flex #AOS #bootstrap #parallax.js</p>
+                            <p class="col-sm-6">#flex #AOS #bootstrap #parallax.js</p>
                         </div>
 
                     </div>
@@ -254,7 +270,7 @@
 
             </div>
         </div>
-        <div class="section note_section">
+        <div class="section note_section" data-anchor="NOTE">
             <div class="container">
                 <div class="note_title title_h2">Note</div>
                 <div class="note_content">
@@ -277,7 +293,7 @@
                         <div class="card_title">
                             <a class="text-dark"
                                href="https://hackmd.io/uDG5SU0bQxGf5vvgaNbIXw">
-                               Laravel:Send Mail With Queue
+                                Laravel:Send Mail With Queue
                             </a>
                         </div>
                         <span class="note_date text-secondary">
@@ -292,7 +308,7 @@
                         <div class="card_title">
                             <a class="text-dark"
                                href="https://hackmd.io/mbkEFYLNQkm6Uom2tiyZcw">
-                               JS:what is this
+                                JS:what is this
                             </a>
                         </div>
                         <span class="note_date text-secondary">
@@ -307,7 +323,7 @@
                         <div class="card_title">
                             <a class="text-dark"
                                href="https://hackmd.io/smK6UGm9SFio8a9ANf6yVA">
-                               aws EC2 連線與檔案上傳
+                                aws EC2 連線與檔案上傳
                             </a>
                         </div>
                         <span class="note_date text-secondary">
@@ -339,7 +355,8 @@
             crossorigin="anonymous"></script>
     <!-- fullpage -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
-
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../03-JS/js.js"></script>
 </body>
 

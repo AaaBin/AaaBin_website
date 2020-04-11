@@ -14,8 +14,19 @@
 .container {
     max-width: 732px;
 }
-.title_h2{
+
+.title_h2 {
     font-size: $fontsize2;
+
+    @media screen and (max-width:500px) {
+        font-size: $fontsize3
+    }
+}
+
+p {
+    @media screen and (max-width:500px) {
+        font-size: 12px;
+    }
 }
 
 // 導覽列文字
@@ -25,6 +36,42 @@
     color: black;
 }
 
+#header {
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+    font-size: 16px;
+
+    @media screen and (max-width:500px) {
+        font-size: 12px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:500px) {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            min-width: 60px;
+            margin: 0 20px;
+            list-style: none;
+
+            @media screen and (max-width:500px) {
+                margin: 0 10px;
+            }
+
+            a {
+                color: black;
+
+            }
+        }
+
+    }
+}
 
 #fullpage {
     background-color: $bg_color;
@@ -44,6 +91,14 @@
                     transition: 2s;
                     left: 0;
                 }
+
+                .landing_img1 {
+                    left: 70px
+                }
+
+                .landing_img3 {
+                    left: -70px;
+                }
             }
 
             .landing_title {
@@ -59,9 +114,6 @@
 
     .profile_section {
         background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
-
-        .container {
-        }
     }
 
     .skill_section {
@@ -79,6 +131,10 @@
                 .collapsing .card.card-body {
                     background-color: $bg_color;
                     border: 0;
+
+                    @media screen and (max-width:500px) {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -86,40 +142,77 @@
 
     .project_section {
         background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
-        .container{
-            .slide{
-                .slide_content{
-                    .img_area{
-                        img{
-                            width: 100%;
+
+        .container {
+            .fp-slides {
+                // max-width: 90%;
+                // margin: auto;
+            }
+
+            .slide {
+                .slide_content {
+                    padding: 0 15px;
+                    .slide_content_top {
+                        h4 {
+                            @media screen and (max-width:500px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .img_area {
+                            @media screen and (max-width:500px) {
+                                padding: 0;
+                            }
+
+                            img {
+                                width: 100%;
+
+                                @media screen and (max-width:500px) {
+                                    width: 95%;
+                                    margin: auto;
+                                }
+                            }
                         }
                     }
                 }
+
             }
-            .fp-prev{
+
+            .fp-prev {
                 left: -30px;
                 border-color: transparent rgba(0, 0, 0, 0.500);
+
+                @media screen and (max-width:500px) {
+                    display: none;
+                }
             }
-            .fp-next{
+
+            .fp-next {
                 right: -30px;
                 border-color: transparent rgba(0, 0, 0, 0.500);
 
+                @media screen and (max-width:500px) {
+                    display: none;
+                }
             }
         }
     }
-    .note_section{
+
+    .note_section {
         background: radial-gradient(circle, rgba(249, 244, 237, 1) 17%, rgba(237, 249, 237, 1) 86%);
 
-        .container{
-            .note_content{
-                .note_card{
-                    .card_title{
+        .container {
+            .note_content {
+                .note_card {
+                    .card_title {
                         font-size: $fontsize3;
                     }
-                    .note_date{
+
+                    .note_date {
                         font-size: $fontsize4;
                     }
-                    .note_tag{
+
+                    .note_tag {
                         font-size: $fontsize4;
                         padding: 1px 5px;
                         border-radius: 1px;
