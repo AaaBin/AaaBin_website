@@ -159,6 +159,10 @@
   padding: 0 15px;
 }
 
+#fullpage .project_section .container .slide .slide_content .slide_content_top h4 {
+  padding: 0 15px;
+}
+
 @media screen and (max-width: 500px) {
   #fullpage .project_section .container .slide .slide_content .slide_content_top h4 {
     font-size: 18px;
@@ -206,6 +210,10 @@
 
 #fullpage .note_section {
   background: radial-gradient(circle, #f9f4ed 17%, #edf9ed 86%);
+}
+
+#fullpage .note_section .container .note_title {
+  margin: 0 0 30px 0;
 }
 
 #fullpage .note_section .container .note_content .note_card .card_title {

@@ -41,3 +41,12 @@ function set_min_height() {
 $('#fullpage').on('show.bs.collapse', function () {
     $('.collapse').collapse('hide');
 })
+
+// 匯入資料
+let data = require('../AaaBin_website.json')
+console.log(data);
+
+new VTTCue({
+    el:"#fullpage",
+    data:data
+})
