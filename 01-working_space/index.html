@@ -39,7 +39,8 @@
 
     </div>
     <div id="fullpage">
-        <div class="section landing_section d-flex" data-anchor="WELCOME">
+        <div class="section landing_section d-flex"
+             data-anchor="WELCOME">
             <div class="container">
                 <div class="landing_img_area">
                     <img src="../04-img/people_ocean_2.png"
@@ -56,14 +57,15 @@
                 </div>
                 <div class="landing_title">
                     <h1 class="title">
-                        Welcome
+                        WELCOME
                     </h1>
                 </div>
 
             </div>
 
         </div>
-        <div class="section profile_section" data-anchor="PROFILE">
+        <div class="section profile_section"
+             data-anchor="PROFILE">
             <div class="container">
                 <h2 class="profile_title title_h2">
                     Profile
@@ -74,7 +76,8 @@
             </div>
 
         </div>
-        <div class="section skill_section" data-anchor="SKILL">
+        <div class="section skill_section"
+             data-anchor="SKILL">
             <div class="container">
                 <h2 class="skill_title title_h2">
                     Skill
@@ -123,8 +126,10 @@
                 </div>
             </div>
         </div>
-        <div class="section project_section" data-anchor="PROJECT">
-            <div class="container position-relative">
+        <div class="section project_section"
+             data-anchor="PROJECT">
+            <div id="prolect_container"
+                 class="container position-relative">
 
                 <div class="slide">
                     <h2 class="project_title title_h2">
@@ -135,7 +140,7 @@
                 <div class="slide">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>團體練習專題：沐心泉</h4>
+                            <h4>{{ project[0].title }}</h4>
                             <a href="https://spring-mountain-test-deploy.herokuapp.com/"
                                class="img_area col-6">
                                 <img src="../04-img/spring_mountain.png"
@@ -144,9 +149,9 @@
                         </div>
                         <div class="slide_content_bottom  d-block justify-content-end">
                             <p class="col-sm-6">
-                                職訓時的團體專題，負責部分為網站後端，使用框架為laravel。
+                                {{ project[0].content }}
                                 <br>
-                                #laravel #REST api #ORM #queue #ajax、axios #fullcalendar
+                                <span v-for="(item) in project[0].tags">#{{item}}</span>
                             </p>
                         </div>
 
@@ -155,15 +160,19 @@
                 <div class="slide">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>後端練習實作</h4>
+                            <h4>{{ project[1].title }}</h4>
                             <a href="https://backend-practice-laravel.herokuapp.com/"
                                class="img_area col-6">
                                 <img src="../04-img/back_end_practice.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#購物車 #金流</p>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[1].content }}
+                                <br>
+                                <span v-for="(item) in project[1].tags">#{{item}}</span>
+                            </p>
                         </div>
 
                     </div>
@@ -173,15 +182,19 @@
 
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>flex切版練習</h4>
+                            <h4>{{ project[2].title }}</h4>
                             <a href="https://aaabin.github.io/program/2020-02-06-flex_box/"
                                class="img_area col-6">
-                                <img src="../04-img/flex_practice.png"
+                                <img src="../04-img/yuanchia.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#flex</p>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[2].content }}
+                                <br>
+                                <span v-for="(item) in project[2].tags">#{{item}}</span>
+                            </p>
                         </div>
 
 
@@ -190,63 +203,59 @@
                 <div class="slide">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>氣象資料API串接</h4>
+                            <h4>{{ project[3].title }}</h4>
                             <a href="https://aaabin.github.io/program/2020-02-17-weather/"
-                               class="img_area col-6">
-                                <img src="../04-img/weather.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#api #JS template literals</p>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>仿切：Fluent Design</h4>
-                            <a href="https://aaabin.github.io/program/2020-02-24-microsoft%20fluent%20design/"
                                class="img_area col-6">
                                 <img src="../04-img/fluent_design.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#flex #scss #AOS #lax.js</p>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[3].content }}
+                                <br>
+                                <span v-for="(item) in project[3].tags">#{{item}}</span>
+                            </p>
                         </div>
+
+
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>仿切：Microsoft</h4>
-                            <a href="https://aaabin.github.io/program/2020-02-19-microsoft_in_scss/"
+                            <h4>{{ project[4].title }}</h4>
+                            <a href="https://aaabin.github.io/program/2020-02-24-microsoft%20fluent%20design/"
                                class="img_area col-6">
                                 <img src="../04-img/microsoft.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#flex</p>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[4].content }}
+                                <br>
+                                <span v-for="(item) in project[4].tags">#{{item}}</span>
+                            </p>
                         </div>
-
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>Mobirise速成一頁式網站</h4>
-                            <a href="https://aaabin.github.io/program/03-13-kj/"
+                            <h4>{{ project[5].title }}</h4>
+                            <a href="https://aaabin.github.io/program/2020-02-19-microsoft_in_scss/"
                                class="img_area col-6">
                                 <img src="../04-img/kj.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#Mobirise #AOS</p>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[5].content }}
+                                <br>
+                                <span v-for="(item) in project[5].tags">#{{item}}</span>
+                            </p>
                         </div>
 
                     </div>
@@ -254,15 +263,39 @@
                 <div class="slide">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>個人練習專題：圓稼（未完成）</h4>
+                            <h4>{{ project[6].title }}</h4>
+                            <a href="https://aaabin.github.io/program/03-13-kj/"
+                               class="img_area col-6">
+                                <img src="../04-img/weather.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[6].content }}
+                                <br>
+                                <span v-for="(item) in project[6].tags">#{{item}}</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_content ">
+                        <div class="slide_content_top d-block align-items-center justify-content-between">
+                            <h4>{{ project[7].title }}</h4>
                             <a href="https://aaabin.github.io/AaaBin_yuanchia/"
                                class="img_area col-6">
                                 <img src="../04-img/yuanchia.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="slide_content_bottom d-flex justify-content-end">
-                            <p class="col-sm-6">#flex #AOS #bootstrap #parallax.js</p>
+                        <div class="slide_content_bottom">
+                            <p class="col-sm-6">
+                                {{ project[7].content }}
+                                <br>
+                                <span v-for="(item) in project[7].tags">#{{item}}</span>
+                            </p>
                         </div>
 
                     </div>
@@ -271,7 +304,8 @@
 
             </div>
         </div>
-        <div class="section note_section" data-anchor="NOTE">
+        <div class="section note_section"
+             data-anchor="NOTE">
             <div class="container">
                 <div class="note_title title_h2">Note</div>
                 <div class="note_content">
@@ -360,6 +394,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Vue -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
+
     <script src="../03-JS/js.js"></script>
 </body>
 

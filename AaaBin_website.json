@@ -9,25 +9,6 @@
     "NOTE"
   ],
   "project_content": {
-    "profile": "我是曾炳憲，來自嘉義，於2019年從東海大學社會系畢業。對程式語言的認識從社會研究的量化分析開始，以此為契機接觸了python作為數據分析的工具，畢業後參加了職訓課程接觸到網頁開發，加深了對這個領域的興趣。",
-    "skill": {
-      "前端": [
-        "RWD",
-        "ajax、axios",
-        "bootstrap",
-        "fullcalendar、AOS、swiper等套件"
-      ],
-      "後端": [
-        "MVC",
-        "REST api",
-        "laravel middleware/validation/queue..."
-      ],
-      "自學中": [
-        "Vue",
-        "JS30",
-        "linux"
-      ]
-    },
     "project": [
       {
         "title": "spring mountain",
