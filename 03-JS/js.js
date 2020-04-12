@@ -42,9 +42,7 @@ $('#fullpage').on('show.bs.collapse', function () {
     $('.collapse').collapse('hide');
 })
 
-// 匯入資料
-// let data = require('../AaaBin_website.json')
-// console.log(data);
+
 let data = {
     "title": "welcome",
     "github_href":"https://github.com/AaaBin",
@@ -178,3 +176,9 @@ let vm = new Vue({
         }
     }
 });
+
+
+let vm2 = new Vue({
+  el:"#header",
+  data:data
+})

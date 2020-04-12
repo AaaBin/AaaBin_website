@@ -27,12 +27,8 @@
 <body>
     <div id="header">
         <div class="container">
-            <ul>
-                <li><a href="#WELCOME">WELCOME</a></li>
-                <li><a href="#PROFILE">PROFILE</a></li>
-                <li><a href="#SKILL">SKILL</a></li>
-                <li><a href="#PROJECT">PROJECT</a></li>
-                <li><a href="#NOTE">NOTE</a></li>
+            <ul >
+                <li v-for="(item) in section"><a :href="'#' + item" > {{ item }}</a></li>
                 <li><a href="https://github.com/AaaBin">GitHub</a></li>
             </ul>
         </div>
@@ -394,6 +390,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Vue -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
+
 
     <script src="../03-JS/js.js"></script>
 </body>
