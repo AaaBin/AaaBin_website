@@ -182,13 +182,11 @@ let vm2 = new Vue({
   data: data
 })
 
-axios.get('http://127.0.0.1:8000/api/file/get/5', {
-})
-  .then(function (response) {
-    // handle success
-    console.log(response.data);
-    const json_data = response.data
-
-   
-  });
+// axios.get('http://127.0.0.1:8000/api/file/get/5', {
+// })
+//   .then(function (response) {
+//     // handle success
+//     console.log(response.data);
+//     const json_data = response.data
+//   });
 
