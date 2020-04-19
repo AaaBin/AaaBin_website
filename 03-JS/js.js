@@ -1,13 +1,4 @@
-// fullpage初始化
-new fullpage('#fullpage', {
-  //options here
-  autoScrolling: true,
-  scrollHorizontally: true,
-  showActiveTooltip: true,
-  navigationTooltips: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE', 'PHOTO'],
-  dragAndMove: true,
-  anchors: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE']
-});
+
 
 // AOS初始化
 AOS.init();
@@ -30,7 +21,7 @@ function set_min_height() {
 
 
 
-axios.get('http://ec2-3-17-155-235.us-east-2.compute.amazonaws.com/api/file/get/2', {
+axios.get('http://ec2-3-17-155-235.us-east-2.compute.amazonaws.com/api/file/get/6', {
 })
   .then(function (response) {
     // handle success
@@ -38,7 +29,7 @@ axios.get('http://ec2-3-17-155-235.us-east-2.compute.amazonaws.com/api/file/get/
     const json_data = response.data;
 
     let vm = new Vue({
-      el: "#prolect_container",
+      el: "#project_container",
       data: json_data,
       computed: {
         project() {
@@ -51,8 +42,21 @@ axios.get('http://ec2-3-17-155-235.us-east-2.compute.amazonaws.com/api/file/get/
       el: "#header",
       data: json_data
     })
+    let vm3 = new Vue({
+      el: ".note_section",
+      data: json_data
+    })
 
-
+    // fullpage初始化
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling: true,
+      scrollHorizontally: true,
+      showActiveTooltip: true,
+      navigationTooltips: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE', 'PHOTO'],
+      dragAndMove: true,
+      anchors: ['WELCOME', 'PROFILE', 'SKILL', 'PROJECT', 'NOTE']
+    });
 
   });
 

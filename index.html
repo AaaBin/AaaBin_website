@@ -27,8 +27,8 @@
 <body>
     <div id="header">
         <div class="container">
-            <ul >
-                <li v-for="(item) in section"><a :href=`#${item}` > {{ item }}</a></li>
+            <ul>
+                <li v-for="(item) in section"><a :href=`#${item}`> {{ item }}</a></li>
                 <li><a href="https://github.com/AaaBin">GitHub</a></li>
             </ul>
         </div>
@@ -124,7 +124,7 @@
         </div>
         <div class="section project_section"
              data-anchor="PROJECT">
-            <div id="prolect_container"
+            <div id="project_container"
                  class="container position-relative">
 
                 <div class="slide">
@@ -133,164 +133,21 @@
                     </h2>
                 </div>
 
-                <div class="slide">
+                <div class="slide" v-for="(item) in project">
                     <div class="slide_content ">
                         <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[0].title }}</h4>
-                            <a href="https://spring-mountain-test-deploy.herokuapp.com/"
+                            <h4>{{ item.title }}</h4>
+                            <a :href="item.url"
                                class="img_area col-6">
-                                <img src="../04-img/spring_mountain.png"
+                                <img :src="item.img"
                                      alt="">
                             </a>
                         </div>
                         <div class="slide_content_bottom  d-block justify-content-end">
                             <p class="col-sm-6">
-                                {{ project[0].content }}
+                                {{ item.content }}
                                 <br>
-                                <span v-for="(item) in project[0].tags">#{{item}}</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[1].title }}</h4>
-                            <a href="https://backend-practice-laravel.herokuapp.com/"
-                               class="img_area col-6">
-                                <img src="../04-img/back_end_practice.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[1].content }}
-                                <br>
-                                <span v-for="(item) in project[1].tags">#{{item}}</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="slide">
-
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[2].title }}</h4>
-                            <a href="https://aaabin.github.io/program/2020-02-06-flex_box/"
-                               class="img_area col-6">
-                                <img src="../04-img/yuanchia.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[2].content }}
-                                <br>
-                                <span v-for="(item) in project[2].tags">#{{item}}</span>
-                            </p>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[3].title }}</h4>
-                            <a href="https://aaabin.github.io/program/2020-02-17-weather/"
-                               class="img_area col-6">
-                                <img src="../04-img/fluent_design.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[3].content }}
-                                <br>
-                                <span v-for="(item) in project[3].tags">#{{item}}</span>
-                            </p>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[4].title }}</h4>
-                            <a href="https://aaabin.github.io/program/2020-02-24-microsoft%20fluent%20design/"
-                               class="img_area col-6">
-                                <img src="../04-img/microsoft.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[4].content }}
-                                <br>
-                                <span v-for="(item) in project[4].tags">#{{item}}</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[5].title }}</h4>
-                            <a href="https://aaabin.github.io/program/2020-02-19-microsoft_in_scss/"
-                               class="img_area col-6">
-                                <img src="../04-img/kj.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[5].content }}
-                                <br>
-                                <span v-for="(item) in project[5].tags">#{{item}}</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[6].title }}</h4>
-                            <a href="https://aaabin.github.io/program/03-13-kj/"
-                               class="img_area col-6">
-                                <img src="../04-img/weather.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[6].content }}
-                                <br>
-                                <span v-for="(item) in project[6].tags">#{{item}}</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide_content ">
-                        <div class="slide_content_top d-block align-items-center justify-content-between">
-                            <h4>{{ project[7].title }}</h4>
-                            <a href="https://aaabin.github.io/AaaBin_yuanchia/"
-                               class="img_area col-6">
-                                <img src="../04-img/yuanchia.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="slide_content_bottom">
-                            <p class="col-sm-6">
-                                {{ project[7].content }}
-                                <br>
-                                <span v-for="(item) in project[7].tags">#{{item}}</span>
+                                <span v-for="(tag) in item.tags">#{{ tag }}</span>
                             </p>
                         </div>
 
@@ -305,67 +162,23 @@
             <div class="container">
                 <div class="note_title title_h2">Note</div>
                 <div class="note_content">
-                    <div class="note_card">
-                        <div class="card_title">
-                            <a class="text-dark"
-                               href="https://hackmd.io/rJ5n1QAXSEq9vIrWnvU_ag">
-                                Vue全家桶跟著做
-                            </a>
-                        </div>
-                        <span class="note_date text-secondary">
-                            from:20200406
-                        </span>
-                        <span class="note_tag text-dark">
-                            Vue
-                        </span>
-                        <hr>
-                    </div>
-                    <div class="note_card">
-                        <div class="card_title">
-                            <a class="text-dark"
-                               href="https://hackmd.io/uDG5SU0bQxGf5vvgaNbIXw">
-                                Laravel:Send Mail With Queue
-                            </a>
-                        </div>
-                        <span class="note_date text-secondary">
-                            from:20200328
-                        </span>
-                        <span class="note_tag text-dark">
-                            Laravel
-                        </span>
-                        <hr>
-                    </div>
-                    <div class="note_card">
-                        <div class="card_title">
-                            <a class="text-dark"
-                               href="https://hackmd.io/mbkEFYLNQkm6Uom2tiyZcw">
-                                JS:what is this
-                            </a>
-                        </div>
-                        <span class="note_date text-secondary">
-                            from:20200404
-                        </span>
-                        <span class="note_tag text-dark">
-                            JavaScript
-                        </span>
-                        <hr>
-                    </div>
-                    <div class="note_card">
-                        <div class="card_title">
-                            <a class="text-dark"
-                               href="https://hackmd.io/s-3P7ExGSLmDmlatofOAgg">
-                               Laravel 疑難雜症
-                            </a>
-                        </div>
-                        <span class="note_date text-secondary">
-                            from:20200415
-                        </span>
-                        <span class="note_tag text-dark">
-                            laravel
-                        </span>
-                        <hr>
-                    </div>
 
+                    <div class="note_card" v-for="(item) in note_content">
+                        <div class="card_title">
+                            <a class="text-dark"
+                               :href="item.url">
+                                {{ item.title }}
+                            </a>
+                        </div>
+                        <span class="note_date text-secondary">
+                           created at {{ item.date }}
+                        </span>
+                        <span class="note_tag text-dark">
+                           tag: {{ item.tag }}
+                        </span>
+                        <hr>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -395,7 +208,7 @@
     <!-- jq -->
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script> -->
 
-    <script src="../03-JS/js.js"></script>
+    <script src="./03-JS/js.js"></script>
 </body>
 
 </html>

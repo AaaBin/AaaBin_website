@@ -1,0 +1,131 @@
+{
+  "title": "welcome",
+  "github_href": "https://github.com/AaaBin",
+  "section": [
+    "WELCOME",
+    "PROFILE",
+    "SKILL",
+    "PROJECT",
+    "NOTE"
+  ],
+  "project_content": {
+    "project": [
+      {
+        "title": "spring mountain",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/spring_mountain.png",
+        "content": "職訓時的團體專題，負責部分為網站後端，使用框架為laravel。",
+        "tags": [
+          "laravel",
+          "REST",
+          "api",
+          "ORM",
+          "queue",
+          "ajax、axios",
+          "fullcalendar"
+        ],
+        "url": "https://spring-mountain-test-deploy.herokuapp.com/"
+      },
+      {
+        "title": "後端實作",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/back_end_practice.png",
+        "content": "學習後端時的練習作品。",
+        "tags": [
+          "laravel",
+          "購物車系統",
+          "金流串接"
+        ],
+        "url": "https://backend-practice-laravel.herokuapp.com/"
+      },
+      {
+        "title": "Yuanchia(未完成)",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/yuanchia.png",
+        "content": "職訓，個人專題，以沒有網站或網站老舊的商家為主題",
+        "tags": [
+          "bootstrap",
+          "parallax.js",
+          "flex"
+        ],
+        "url": "https://aaabin.github.io/AaaBin_yuanchia/01-%E5%80%8B%E4%BA%BA%E5%B0%88%E9%A1%8C/03-worling_space/v1.html"
+      },
+      {
+        "title": "Fluent Design",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/fluent_design.png",
+        "content": "職訓，仿切練習",
+        "tags": [
+          "RWD",
+          "SCSS",
+          "lax.js",
+          "AOS.js"
+        ],
+        "url": "https://aaabin.github.io/program/2020-02-24-microsoft%20fluent%20design/"
+      },
+      {
+        "title": "Microsoft",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/microsoft.png",
+        "content": "職訓，仿切練習",
+        "tags": [
+          "flex",
+          "RWD"
+        ],
+        "url": "https://aaabin.github.io/program/2020-02-19-microsoft_in_scss/"
+      },
+      {
+        "title": "KJ Engineering",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/kj.png",
+        "content": "職訓，以mobirise速成畫面，再進行個人化的修改。",
+        "tags": [
+          "mobirise",
+          "AOS.js",
+          "hover.css"
+        ],
+        "url": "https://aaabin.github.io/program/03-13-kj/"
+      },
+      {
+        "title": "weather API",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/weather.png",
+        "content": "職訓，以氣象局開放之API配合JS樣板字串來產生畫面。",
+        "tags": [
+          "api",
+          "JS template literals"
+        ],
+        "url": "https://aaabin.github.io/program/2020-02-17-weather/"
+      },
+      {
+        "title": "Flex",
+        "img": "https://aaabin-create-at-20200419.s3-ap-northeast-1.amazonaws.com/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/04-img/flex_practice.png",
+        "content": "職訓，以flex屬性作切版練習",
+        "tags": [
+          "RWD",
+          "flex"
+        ],
+        "url": "https://aaabin.github.io/program/2020-02-06-flex_box/"
+      }
+    ]
+  },
+  "note_content": [
+    {
+      "title": "Vue全家桶跟著做",
+      "date": "20200406",
+      "tag": "Vue",
+      "url": "https://hackmd.io/rJ5n1QAXSEq9vIrWnvU_ag"
+    },
+    {
+      "title": "Laravel:Send Mail With Queue",
+      "date": "20200328",
+      "tag": "Laravel",
+      "url": "https://hackmd.io/uDG5SU0bQxGf5vvgaNbIXw"
+    },
+    {
+      "title": "JS:what is this",
+      "date": "20200404",
+      "tag": "JavaScript",
+      "url": "https://hackmd.io/mbkEFYLNQkm6Uom2tiyZcw"
+    },
+    {
+      "title": "Laravel 疑難雜症",
+      "date": "20200414",
+      "tag": "Laravel",
+      "url": "https://hackmd.io/s-3P7ExGSLmDmlatofOAgg"
+    }
+  ]
+}
